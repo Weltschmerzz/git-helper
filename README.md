@@ -115,9 +115,9 @@ git remote -v   # убедиться, что связь с удалённым р
 
 ```mermaid
 flowchart LR
-  A[untracked<br/>(неотслеживаемый)] -->|git add| B[staged<br/>(в списке на коммит)<br/>+ tracked]
-  B -->|git commit| C[tracked<br/>(отслеживаемый)]
-  C -->|Изменения| D[modified<br/>(изменённый)]
+  A[untracked\n(неотслеживаемый)] -->|git add| B[staged\n(в списке на коммит)\n+ tracked]
+  B -->|git commit| C[tracked\n(отслеживаемый)]
+  C -->|Изменения| D[modified\n(изменённый)]
   D -->|git add| B
   B -->|Изменения| D
   D -->|Ещё изменения| D
